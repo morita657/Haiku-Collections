@@ -1,0 +1,14 @@
+doctype
+html
+    head
+    body
+        header
+            h1 Haiku Collections
+            a(href="/quotes") Create
+        div
+            each val, index in quotes
+                li= val.name + ": " + val.quote
+                span
+                    a(href=`/quotes/${index}`) Edit
+                    button(class="delete") Delete
+        script(type="text/javascript", src="../main.js")

@@ -1,0 +1,15 @@
+doctype
+html
+    head
+    body
+        header
+            h1 Haiku Collections
+        div
+            div= "Name: "
+                input(type="text", value=haiku.name, id="name")
+
+            div= "Quotes: "
+                input(type="text", value=haiku.quote, id="quote")
+
+            button(id="save") Save
+        script(type="text/javascript", src="../main.js")
